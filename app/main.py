@@ -1,5 +1,6 @@
 def main() -> None:
-    text_file = open(f"{input("Enter name of the file: ")}.txt", "a")
+    name = input("Enter name of the file: ")
+    text_file = open(f"{name}.txt", "a")
     while True:
         text = input("Enter new line of content: ")
         if text == "stop":
